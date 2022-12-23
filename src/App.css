@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+  background: #282D35;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+
+}
