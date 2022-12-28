@@ -1,10 +1,20 @@
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContextProvider from "./context/Context";
 import Navbar from "./components/Navbar/Navbar";
+import Shop from "../src/pages/SHop/Shop";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <ContextProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Shop />} />
+          </Routes>
+        </Router>
+      </ContextProvider>
     </div>
   );
 }
