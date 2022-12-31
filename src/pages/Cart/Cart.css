@@ -1,6 +1,8 @@
 .cart {
-  background-image: url("../../photos/UnderConstruction.jpeg");
-  background-size: cover;
+  background-image: url("../../photos/page-under-construction-icon.jpg");
   background-position: center;
-  height: 100vh;
+  background-repeat: no-repeat;
+  width: 95vw;
+  height: 90vh;
+  margin: auto;
 }

@@ -85,4 +85,18 @@
     max-width: 80%;
     margin: auto;
   }
+
+  .product {
+    height: 375px;
+    padding: 10px;
+  }
+
+  .product-img {
+    height: 205px;
+  }
+
+  .shop {
+    padding: 15px;
+  }
+
 }
