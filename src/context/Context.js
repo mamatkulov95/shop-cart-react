@@ -16,10 +16,26 @@ export default function ContextProvider(props) {
   const addToCart = (id) => {
     setCartItems((prevItems) => ({ ...prevItems, [id]: prevItems[id] + 1 }));
   };
+  const deleteCart = (id) => {
+    setCartItems((prevItems) => ({ ...prevItems, [id]: prevItems[id] - 1 }));
+  };
+
+  const getTotalCartAmount = () => {
+    let totalAmount = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        PRODUCTS.find((product) => product.id === Number(item));
+        totalAmount += cartItems[item];
+      }
+    }
+    return totalAmount;
+  };
 
   const contextValue = {
     addToCart,
     cartItems,
+    deleteCart,
+    getTotalCartAmount,
   };
 
   return (
