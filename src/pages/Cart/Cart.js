@@ -15,7 +15,7 @@ export default function Card() {
       <div className="shop">
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] !== 0) {
-            return <CartItem data={product} />;
+            return <CartItem data={product} key={product.id} />;
           }
         })}
       </div>
