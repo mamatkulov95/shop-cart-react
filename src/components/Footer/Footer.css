@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  margin-top: auto;
+  background: #21222A;
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+
+  }
+
+  .social-links {
+    gap: 25px;
+  }
+
+}
