@@ -51,7 +51,7 @@
 .shop {
   display: grid;
   justify-items: center;
-  padding: 20px 120px;
+  padding: 20px 40px;
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: 8 / auto;
   grid-gap: 20px;
